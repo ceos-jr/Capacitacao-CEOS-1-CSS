@@ -14,8 +14,8 @@ Nesse módulo, vamos seguir a seguinte jornada:
 
 ## Contribuindo
 
-Caso você encontre algum erro gramatical, erro de conteúdo ou queira acrescentar conceitos novos para o módulo CSS, Leia nosso [arquivo de contribuição]()
+Caso você encontre algum erro gramatical, erro de conteúdo ou queira acrescentar conceitos novos para o módulo CSS, Leia nosso [arquivo de contribuição](https://github.com/pEight/CSS-training/blob/master/CONTRIBUTING.md)
 
 ## Licença
 
-[MIT]()
+[MIT](https://github.com/pEight/CSS-training/blob/master/LICENSE)
