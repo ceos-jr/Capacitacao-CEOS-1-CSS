@@ -6,7 +6,7 @@ melhor o processo de estruturação de uma página e assim estar mais preparado 
 
 Nesse módulo, vamos seguir a seguinte jornada:
 
-1. Seletores, Especificidade, Cascata e Herança.
+1. [Seletores, Especificidade, Cascata e Herança](https://github.com/pEight/CSS-training/blob/master/part-one.md).
 2. Posicionamento CSS.
 3. Flexbox layout.
 4. Grid layout.
