@@ -9,28 +9,28 @@ Media Querie é uma ferramenta fornecida pelo CSS para aplicação de regras de 
 A primeira coisa que você deve fazer é aprender o atalho para abrir ass ferramentas de desenvolvimento do firefox. Para fazer isso, pressione `Ctrl+Shift+i`. Observe que aparece uma barra embaixo do conteúdo. A segunda coisa que devemos fazer é ativar a régua do firefox. Para isso clique nos três pontos no canto superior direito dessa barra. Depois clique em `settings`, role até encontra o título **Available Toolbox Buttons** e marque a opção **Toogle rules for the page**. Veja as imagens abaixo:
 
 <p align="center">
-	<img alt="" src="../.github/part-five/devtools1.png">
+	<img alt="Ferramenta de desenvolvimento" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-five/devtools1.png">
 </p>
 
 <p align="center">
-	<img alt="" src="../.github/part-five/devtools2.png">
+	<img alt="Habilitar a régua do firefox" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-five/devtools2.png">
 </p>
 
 Agora, você pode selecionar uma régua que informa o tamanho da `viewport`. Basta clicar!
 
 <p align="center">
-	<img alt="" src="../.github/part-five/devtools3.png">
+	<img alt="Régua do firefox" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-five/devtools3.png">
 </p>
 
 Outra ferramenta muito útil é a de simulação de tamanho de um smartphone. Ela nos ajuda a visualizar nosso site como se estivessemos no dispositivo.
 
 <p align="center">
-	<img alt="" src="../.github/part-five/devtools4.png">
+	<img alt="Ferramenta de desenvolvimento" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-five/devtools4.png">
 </p>
 
 Então:
 <p align="center">
-	<img alt="" src="../.github/part-five/mobile-view.png">
+	<img alt="Tela com simulação de uma tela de smartphone" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-five/mobile-view.png">
 </p>
 
 Legenda:
@@ -132,7 +132,16 @@ O código é um exemplo de media queries aplicado a fonte baseado na largura da 
 
 ```html
 <h1>Media Queries</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel velit sit amet arcu semper suscipit ut eu lorem. Donec molestie enim at ipsum porttitor tincidunt sed vitae nisl. Proin ac lorem et felis consectetur tempor at in quam. Quisque feugiat pellentesque vestibulum. Pellentesque ac posuere mi, in posuere justo. Duis nec ultrices lorem. Pellentesque blandit enim sit amet facilisis tincidunt. Sed iaculis nec augue in egestas. Donec imperdiet justo eget pharetra consequat. Donec neque leo, posuere sit amet maximus vitae, viverra sed metus. Curabitur accumsan vel odio eget fermentum. Duis imperdiet enim ac ante luctus egestas. Fusce posuere dui ex. Nam facilisis velit leo. Nam vel ultrices diam, et suscipit lacus. </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel velit 
+sit amet arcu semper suscipit ut eu lorem. Donec molestie enim at ipsum 
+porttitor tincidunt sed vitae nisl. Proin ac lorem et felis consectetur tempor
+at in quam. Quisque feugiat pellentesque vestibulum. Pellentesque ac posuere mi,
+in posuere justo. Duis nec ultrices lorem. Pellentesque blandit enim sit amet
+facilisis tincidunt. Sed iaculis nec augue in egestas. Donec imperdiet justo eget
+pharetra consequat. Donec neque leo, posuere sit amet maximus vitae, viverra sed
+metus. Curabitur accumsan vel odio eget fermentum. Duis imperdiet enim ac ante
+luctus egestas. Fusce posuere dui ex. Nam facilisis velit leo. Nam vel ultrices
+diam, et suscipit lacus.</p>
 ```
 
 ```css
@@ -149,6 +158,7 @@ p {
 	font-size: 1.8em;
 	text-align: justify;
 }
+
 
 @media (max-width: 780px) {
 	body { font-size: 10px }
