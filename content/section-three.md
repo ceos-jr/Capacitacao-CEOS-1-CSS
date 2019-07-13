@@ -6,9 +6,13 @@ Nas Flexboxs, existem alguns termos técnicos que nos ajudam a entender melhor s
 
 Quando declaramos a propriedade `display: flex` para um elemento, ele passa a ser um **flex container**, enquanto que seus filhos passam a ser **flex items**. É criado dois eixos imaginários, o **main-axis** e o **cross-axis**. Quando a propriedade `flex-direction` recebe o valor `row`, o main-axis é um eixo horizontal enquanto o cross-axis é o eixo vertical que fica perpendicular ao main-axis. Caso essa propriedade receba o valor `column`, o main-axis é o eixo vertical, enquanto o cross-axis é o eixo horizontal perpendicular ao main-axis. Por padrão, quando você torna um elemento flex container, a propriedade `flex-direction` recebe o valor de `row`. 
 
-![Ilustração a identificar os eixos para flex-direcito igual a row ou row-reverse](../.github/part-three/axis1.png)
+<p align="center">
+	<img height="300px" alt="Ilustração a identificar os eixos para flex-direction igual a row ou row-reverse" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/axis1.png"> 
+</p>
 
-![Ilustração a identificar os eixos para flex-direcito igual a column ou column-reverse](../.github/part-three/axis2.png)
+<p align="center">
+	<img height="300px" alt="Ilustração a identificar os eixos para flex-direction igual a column ou column-reverse" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/axis2.png">
+</p>
 
 A tabela abaixo mostra quais valores `flex-direction` pode receber:
 
@@ -16,8 +20,8 @@ A tabela abaixo mostra quais valores `flex-direction` pode receber:
 | ----- | --------- | ------ |
 | `row`   | Main-axis é o eixo horizontal e os elementos começam do início desse eixo, ou seja, na esquerda | ![Valor de flex-direction igual a row](../.github/part-three/flex-direction1.png) |
 | `row-reverse` | Main-axis continua sendo o eixo horizontal, mas agora os elementos começam da direita do eixo | ![Valor de flex-direction igual a row-reverse](../.github/part-three/flex-direction2.png) |
-| `column` | Main-axis passa a ser o eixo vertical e os elementos começam da parte superior do eixo | ![Valor de flex-direction igual a column](../.github/part-three/flex-direction3.png) |
-`column-reverse` | Main-axis continua sendo o eixo vertical e os elementos começam da parte inferior do eixo | ![Valor de flex-direction igual a column-reverse](../.github/part-three/flex-direction4.png) |
+| `column` | Main-axis passa a ser o eixo vertical e os elementos começam da parte superior do eixo | <p align="center"><img height="350px" alt="Valor de flex-direction igual a column" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/flex-direction3.png"></p> |
+|`column-reverse` | Main-axis continua sendo o eixo vertical e os elementos começam da parte inferior do eixo | <p align="center"><img height="350px" alt="Valor de flex-direction igual a column-reverse" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/flex-direction4.png"></p> |
 
 Os flex items, por padrão, se expandem no cross-axis, mas não fazem isso no main-axis. No eixo principal, eles podem apenas diminuir de tamanho de acordo com o tamanho da `viewport`.
 
@@ -91,7 +95,9 @@ No código abaixo, ao usar `justify-content: center` no flex container, os flex-
 }
 ```
 
-![flex items centralizado no eixo principal](../.github/part-three/justify-content.png)
+<p align="center">
+	<img alt="flex items centralizado no eixo principal" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/justify-content.png" >
+</p>
 
 Segue abaixo uma tabela com os valores que `justify-content` pode receber. Busque testar cada valor para tirar suas próprias conclusões.
 
@@ -135,7 +141,9 @@ Agora você pode se perguntar qual propriedade usamos para alinhar baseado no cr
 
 A seguinte configuração será mostrada:
 
-![Alinhamento no fim baseado no cross-axis](../.github/part-three/align-items1.png)
+<p align="center">
+	<img alt="Alinhamento no fim baseado no cross-axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/align-items1.png" >
+</p>
 
 > **Exercício sugerido**:
 > Mude de `align-items` para `align-content`. O que ocorre?
@@ -179,10 +187,16 @@ Agora, usando `align-content` no exemplo abaixo:
 ```
 
 Temos então:
-![Alinhamento no fim baseado no cross-axis](../.github/part-three/align-content.png)
+
+<p align="center">
+	<img alt="Alinhamento no fim baseado no cross-axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/align-content.png" >
+</p>
 
 Mudando de `align-content` para `align-items`, vamos ter algo como mostra a imagem abaixo:
-![Alinhamento no fim baseado no cross-axis](../.github/part-three/align-items2.png)
+
+<p align="center">
+	<img alt="Alinhamento no fim baseado no cross-axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/align-items2.png" >
+</p>
 
 > **Exercício sugerido**:
 > Qual a diferença que você observou entre essas duas propriedades?
@@ -248,7 +262,10 @@ Podemos também definir a ordem dos elementos com `order`. Veja o exemplo abaixo
 ```
 
 No navegador:
-![Mudando a ordem dos flex items](../.github/part-three/order.png)
+
+<p align="center">
+	<img alt="Mudando a ordem dos flex items" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/order.png" >
+</p>
 
 Também é possível realizar o alinhamento pelo cross-axis de apenas um item. Observe o exemplo abaixo com a propriedade `align-self`
 
@@ -286,7 +303,9 @@ Também é possível realizar o alinhamento pelo cross-axis de apenas um item. O
 ```
 
 A renderização será como mostra na imagem abaixo:
-![Alinhamento individual de flex items](../.github/part-three/align-self.png)
+<p align="center">
+	<img alt="Alinhamento individual dos flex items" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-three/align-self.png" >
+</p>
 
 Para `align-self` podemos receber os valores mostrado na tabela abaixo. Busque testar cada um e tirar suas próprias conclusões.
 
