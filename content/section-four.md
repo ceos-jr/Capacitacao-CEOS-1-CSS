@@ -28,17 +28,17 @@ Quando declaramos a propriedade `display: grid` em um elemento, criamos um **gri
 Por enquanto, o código acima não possui nenhuma diferença do que nós ja vimos. Isso ocorre porque para esse grid container, temos apenas uma **célula**. Por definição, esse termo se refere a área formada por linhas horizontais paralelas mais próximas e linhas verticais mais próximas. Uma célula é a menor unidade de um grid. Observe a imagem abaixo:
 
 <p align="center">
-	<img height="300px" alt="Célula" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/cel.png">
+	<img height="300px" alt="Célula" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/cel.png">
 </p>
 
 Um conjunto de células horizontais ou verticais formam o nosso **grid track**. Observe que um **grid-track** formado por células verticais definem nossa **coluna**. Caso seja formado por células horizontais, temos uma **linha**.
 
 <p align="center">
-	<img height="300px" alt="Grid track representando uma linha" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/grid-track1.png">
+	<img height="300px" alt="Grid track representando uma linha" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/grid-track1.png">
 </p>
 
 <p align="center">
-	<img height="300px" alt="Grid track representando uma coluna" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/grid-track2.png">
+	<img height="300px" alt="Grid track representando uma coluna" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/grid-track2.png">
 </p>
 
 Para definir essas linhas e colunas, dentro do nosso grid container, definimos as propriedades `grid-template-rows` para criação de linhas e `grid-template-columns` para criação de colunas.
@@ -65,7 +65,7 @@ Nesse código, ao utilizar `grid-template-columns: 1fr 1fr 1fr`, estamos definin
 Lembra que mencionamos que linhas são diferentes do conceito de linhas horizontais e colunas são diferentes do conceito de linhas verticais? Agora vamos ver exatamente porque essa diferença de nomeclatura. Observe de novo a seguinte declaração: `grid-template-columns: 1fr 1fr 1fr`. Aqui sabemos que temos 3 colunas, mas essas colunas são formadas por um conjunto de linhas verticais e para formar três colunas, precisamos de 4 linhas verticais. Portanto, para essa linha de código, temos 3 colunas e 4 linhas verticais. Saber a diferença desses dois conceitos é muito importante para saber como posicionar os grid items nas células correta.
 
 <p align="center">
-	<img height="400px" alt="Linhas verticais que formam uma coluna" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/grid-vertical-row1.png">
+	<img height="400px" alt="Linhas verticais que formam uma coluna" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/grid-vertical-row1.png">
 </p>
 
 > **Exercício sugerido**:
@@ -74,13 +74,13 @@ Lembra que mencionamos que linhas são diferentes do conceito de linhas horizont
 **Observação**: Caso você utilize o navegador firefox, nas ferramentas de desenvolvimento você pode ativar a malha visual para saber se realmente foram criadas a quantidade correta de linhas e colunas.
 
 <p align="center">
-	<img height="200px" alt="Ferramenta de desenvolvimento do firefox" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/dev-tools.png">
+	<img height="200px" alt="Ferramenta de desenvolvimento do firefox" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/dev-tools.png">
 </p>
 
 Uma **grid area** é formada por um conjunto de células não necessariamente formando uma linha ou uma coluna. Veja a imagem abaixo:
 
 <p align="center">
-	<img height="300px" alt="Grid area" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/grid-area.png">
+	<img height="300px" alt="Grid area" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/grid-area.png">
 </p>
 
 ## Posicionamento de grid items
@@ -152,7 +152,7 @@ footer {
 
 Vamos ter:
 <p align="center">
-	<img height="400px" alt="Template proposto no texto acima" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/template.png">
+	<img height="400px" alt="Template proposto no texto acima" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/template.png">
 </p>
 
 Para as quatro propriedades faladas acima, temos alguns shorthand que diminuem a quantidade de código escrito. Eles são o `grid-column` e `grid-row` Veja o código abaixo para saber como utilizá-las.
@@ -263,11 +263,11 @@ Em alguns casos, você pode precisar definir um espaçamento entre as colunas e 
 Muito parecido com o sistema de alinhamento de flexbox layout, o grid layout possui dois eixos imaginários. Um na vertical chamado de **block axis** e outro na horizontal conhecido como **inline axis**.
 
 <p align="center">
-	<img height="200px" alt="Block axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/block-axis.png">
+	<img height="200px" alt="Block axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/block-axis.png">
 </p>
 
 <p align="center">
-	<img height="200px" alt="inline axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/blob/master/.github/part-four/inline-axis.png">
+	<img height="200px" alt="inline axis" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-four/inline-axis.png">
 </p>
 
 
