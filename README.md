@@ -9,7 +9,7 @@ Nesse módulo, vamos seguir a seguinte jornada:
 1. [Seletores, Especificidade, Cascata e Herança](https://ceos-jr.github.io/Capacitacao-CEOS-1-CSS/content/section-one).
 2. [Posicionamento CSS](https://ceos-jr.github.io/Capacitacao-CEOS-1-CSS/content/section-two).
 3. [Flexbox layout](https://ceos-jr.github.io/Capacitacao-CEOS-1-CSS/content/section-three).
-4. Grid layout.
+4. [Grid layout](https://ceos-jr.github.io/Capacitacao-CEOS-1-CSS/content/section-four).
 5. Media Queries.
 
 ## Enviando exercícios
