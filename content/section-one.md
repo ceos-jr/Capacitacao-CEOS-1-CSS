@@ -18,7 +18,9 @@ Antes de começarmos a falar dos temas desse módulo, precisamos explicar alguns
 
 Quando o navegador recebe esse arquivo, ele realiza a análise de cima para baixo. Ou seja, ele começa analisando a linha que possui ```<!DOCTYPE html>```, depois ```<html>``` e assim sucessivamente. A partir disso, ele constrói uma estrutura hierárquica que chamamos de **árvore do documento**. Graficamente, podemos representar o HTML mostrado acima da seguinte forma:
 
-![Arvore do Documento](../.github/part-one/doc-tree.png)
+<p align="center">
+	<img alt="Árvore do Documento" src="https://github.com/ceos-jr/Capacitacao-CEOS-1-CSS/raw/master/.github/part-one/doc-tree.png">
+</p>
 
 Algumas palavras são utilizadas para definir a relação de parentesco dos elementos. Elas são:
 
