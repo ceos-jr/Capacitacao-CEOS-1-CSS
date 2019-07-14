@@ -1,5 +1,10 @@
-# Exercícios Propostos
+# Exercício Proposto
 
+Segue uma lista de exercício com os conteúdos ensinado no módulo CSS. Siga o passo a passo de como mandar um exercício para a gente corrigir. Observe as issues. Ali você coloca o link do pull request criado da respectiva questão. Uma tabela será apresentada nas issues de cada exercício dizendo se você fez corretamente ou não. A legenda abaixo mostra o símbolo para casos de acerto perfeito, acerto e erro.
+
+- :heavy_check_mark: (Acerto Perfeito)
+- :o: (Acerto)
+- :x: (Erro)
 
 ## Exercício 1
  Observe o código abaixo e complete a relação de parentesco abaixo:
