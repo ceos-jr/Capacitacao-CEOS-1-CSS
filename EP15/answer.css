@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(150, 217, 238);
+    grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+header img{
+    height: 108px;
+    width: 304px;
+}
+
+header nav ul li{
+    font-size: 15pt;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+}
+
+main{
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+    grid-row-end:4;
+    padding-right: 50px;
+    border-right: 1px black solid;
+}
+
+main h1{
+    font-size: 18pt;
+    margin-bottom: 0px;
+}
+
+main h2{
+    color: rgb(70, 70, 70);
+    font-size: 13pt;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-bottom: 2px #cecece solid;
+}
+
+main p{
+    /*margin-right: 100px;*/
+    text-align: justify;
+    text-indent: 50px;
+}
+
+main img{
+    float: left;
+    height: 200px;
+    width: 166px;
+    margin-left: 100px;
+    margin-right: 30px;
+    /*margin-top: -30px;*/
+}
+
+aside{
+    grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+    grid-row-end: 4;
+    /*float: right;*/
+    /*margin: 20px;*/
+    padding: 10px;
+    /*border-left: 1px black solid;*/
+    width: 200px;
+    margin-left: 100px;
+}
+
+aside h2{
+    border-bottom: 1px black solid;
+}
+
+aside img, aside a{
+    margin-top: 20px;
+}
+
+footer{
+    grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+    background: rgb(150, 217, 238);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    font-size: 15pt;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 1024px){
+    #logo-ufc{display: none}
+    ul{display: none}
+}
+
+@media (max-width: 400px){
+    footer{flex-direction: column}
+    #logo-ufc{display: block}
+}
