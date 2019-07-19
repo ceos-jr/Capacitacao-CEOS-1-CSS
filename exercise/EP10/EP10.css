@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#grid-conteiner{
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+#cima{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-bottom: 2.5%;
+}
+#cima #lado{
+	height: 100%;
+}
+#cima #lado #um{
+ 	height: 25%;
+}
+#cima #lado #dois{
+ 	height: 25%;
+ 	background-color: blue;
+}
+ #cima #lado #tres{
+ 	height: 25%;
+}
+#cima #lado #quatro{
+ 	height: 25%;
+ 	background-color: blue;
+}
+
+
+#baixo{
+	display: grid;
+	margin-top: 3.5%;
+}
+
+#baixo #um{
+	background-color: blue;
+}
+#baixo #tres{
+	background-color: blue;
+}
+
+#cima #sun{
+	display: flex;
+	width: 70%;
+}
+#cima #sun img{
+	margin-left: 30%;
+}

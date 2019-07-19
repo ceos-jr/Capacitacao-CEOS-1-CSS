@@ -1,0 +1,8 @@
+#right{
+	width: 35%
+}
+
+#right ul li{
+	display: inline-block;
+	margin-top: 40px;
+}

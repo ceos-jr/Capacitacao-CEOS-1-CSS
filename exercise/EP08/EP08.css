@@ -1,0 +1,27 @@
+#navbar{
+	width: 100%;
+	height: 60px;
+	background-color: rgb(100, 100, 100);
+}
+
+#navbar img{
+	height: 80%;
+	margin-left: 20px;
+	margin-top: 5px;
+	float: left;
+}
+#navbar ul li{
+	display: inline;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+
+}
+#navbar input{
+	width: 200px;
+	height: 20px;
+	border-radius: 3px;
+	margin-left: 30px;
+	margin-top: 17px;
+	float: left;
+}

@@ -1,0 +1,28 @@
+#background{
+	border: 1px solid;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal{
+	height: 27%;
+	justify-content: center;
+	border-radius: 25px 1px;
+	align-self: center;
+	background-color: white;
+}
+
+#modal h3{
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	border-bottom: 1px solid;
+
+}
+
+#modal p{
+	width: 36%;
+	margin-left: 32%;
+}
