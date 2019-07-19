@@ -1,0 +1,30 @@
+#footer{
+	display: flex;
+	height: 100%;
+	background-color: rgba(125, 125, 125, 0.6);
+	justify-content: center;
+}
+
+#footer p{
+	color: white;
+	align-self: center;
+}
+#footer img{
+	width: 150px;
+}
+
+@media(max-width: 1024px){
+	#footer #ufc-foot{
+		display: none;
+	}
+}
+
+@media(max-width: 480px){
+	#footer #ufc-foot{
+		display: inline;
+	}
+	#footer{
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+}
