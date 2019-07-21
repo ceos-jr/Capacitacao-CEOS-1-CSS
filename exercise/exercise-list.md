@@ -394,6 +394,68 @@ Crie um footer com flexbox layout. Siga as seguintes especificações:
 **Dica**: para fazer um elemento desaparecer no CSS, basta usar `display: none`.
 
 As imagens da logo da CEOS e da UFC vão estar na pasta `exercise11`.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="ex11.css" type="text/css">
+        <title>Exercício 11</title>
+    </head>
+    <body>
+        <header></header>
+        <main></main>
+        <footer id="flex-container">
+            <img class="flex-item" src="https://raw.githubusercontent.com/arthus05/Capacitacao-CEOS-1-CSS/master/exercise/exercise11/ceos-logo-vertical.png" alt="logo da CEOS">
+            <p class="flex-item">UFC Campus do Pici, Bloco 902 sala - 60020-181</p>
+            <img class="flex-item" src="https://raw.githubusercontent.com/arthus05/Capacitacao-CEOS-1-CSS/master/exercise/exercise11/ufc-logo-vertical-01.png" alt="logo da UFC">
+        </footer>
+    </body>
+</html>
+```
+
+```css
+header {
+    height: 200px;
+}
+
+main {
+    height: 450px;
+}
+
+#flex-container {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(233, 182, 107);
+}
+
+img[alt="logo da UFC"] {
+    height: 60px;
+    width: auto;
+}
+
+img[alt="logo da CEOS"] {
+    height: 60px;
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+    img[alt="logo da UFC"] {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img[alt="logo da UFC"] {
+        display: initial;
+    }
+}
+```
 
 ## Exercício 12
 
