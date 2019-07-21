@@ -467,6 +467,82 @@ Crie um header com flexboy layout. Siga as seguintes especificações:
 - Não é preciso fazer a funcionalidade de ao clicar nas três barrinhas, faça aparecer o menu.
 
 **Dica**: para fazer as três barrinhas, utilize os pseudoelementos `::before` e `::after`. Talvez definir tamanho e `display: block` possa ajudar. É de seu critério testar se isso resolve o seu problema ou não.
+RESPOSTA:
+```html
+body {
+    margin: 0px;
+}
+
+#flex-container {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #009bc3;
+    background-image: linear-gradient(#009bc3, white)
+}
+
+.flex-item {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3C4144;
+}
+
+.traço {
+    display: none;
+    width: 25px;
+    height: 4px;
+    background-color: #1a4776;
+    margin: 5px;
+}
+
+header {
+    height: 500px;
+    width: 100%;
+    background-image: url(https://raw.githubusercontent.com/arthus05/Capacitacao-CEOS-1-CSS/master/exercise/exercise12/ceos-logo-horizontal.png); 
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+}
+
+@media (max-width: 1024px) {
+    .traço {
+        display: block;
+    }
+
+    #flex-container {
+        display: initial;
+    }
+
+    .flex-item {
+        display: none;
+    }
+}
+```
+
+```css
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 12</title>
+        <link rel="stylesheet" href="ex12.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <nav id="flex-container">
+                <section class="traço"></section>
+                <section class="traço"></section>
+                <section class="traço"></section>
+                <p class="flex-item">Sobre</p>
+                <p class="flex-item">Quem Somos</p>
+                <p class="flex-item">Serviços</p>
+                <p class="flex-item">Contato</p>
+            </nav>
+        </header>
+    </body>
+</html>
+```
 
 ## Exercício 13
 
