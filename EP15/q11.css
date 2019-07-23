@@ -1,0 +1,47 @@
+#flex-item1{
+	width: 90px;
+	height: 90px;
+}
+
+#flex-item2{
+	font-family: arial;
+	font-size: 15px;
+	align-self: center;
+
+
+}
+#flex-item3{
+	width: 110px;
+	height: 90px;	
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+footer{
+	width: 100vw;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	background: #add5f0;
+}
+
+@media screen and (max-width: 1024px){
+	#flex-item3{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	#flex-item3{
+		display: inline;
+	}
+	footer{
+		display: inline; 
+	}
+}

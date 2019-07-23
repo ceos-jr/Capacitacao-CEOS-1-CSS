@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+main{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	
+}
+
+#coracao-sd{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	height: 220px;
+}
+
+#coracao-se{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	height: 220px;
+}
+
+#coracao-id{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 6;
+	grid-row-end: 7;
+	height: 220px;
+}
+
+#coracao-ie{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 7;
+	height: 220px;
+}
+
+#porta-ceos{
+	height: 400px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 6;
+}
+
+main p{
+	font-size: 25px;
+	font-family: arial;
+}
