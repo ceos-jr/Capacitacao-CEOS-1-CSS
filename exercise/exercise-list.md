@@ -184,3 +184,12 @@ Pegue o html e css feito nos exercícios 11, 12, 13, 14 e utilizando grid layout
 ![Template](../.github/part-four/template.png)
 
 Quando a tela for menor ou igual a 1024px, faça desaparecer o conteúdo lateral.
+
+## Exercício 16
+
+[Dogs](https://dog.ceo/dog-api/) é uma API que retorna imagens de cachorros. Construa um pequeno instagram consumindo essa API. Para estilização, use `flexbox layout`. Para fazer uma requisição, utilize [fetch API](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch). Siga a lista abaixo para cumprir o exercício.
+
+- Crie o mockup da página e salve em formato pdf.
+- Crie um repositório no github e comece o projeto.
+- Adicione os mockups em uma pasta do repositório chamada `mockups`.
+- Ao terminar, coloque o link do repositório em um comentário na issue 16.
