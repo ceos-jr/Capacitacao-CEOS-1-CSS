@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+
+#credito{
+	align-self: flex-end;
+}
+
+aside{
+	width: 64px;
+	height: 215px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #ffffff;
+	position: fixed;
+}
+
+
