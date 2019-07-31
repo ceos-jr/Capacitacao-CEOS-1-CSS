@@ -382,6 +382,132 @@ Com grid layout e flexbox, desenhe a bandeira do uruguai. Olhe a imagem abaixo:
 ![Bandeira do uruguai](../.github/exercise/uruguai.png)
 
 A imagem do sol está na pasta `exercise10`. Busque não perder a resolução dessa imagem ao dimensionar as linhas e colunas.
+RESPOSTA:
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 10</title>
+        <link rel="stylesheet" href="ex10.css" type="text/css">
+    </head>
+    <body> 
+        <section id="grid-container">
+            <img id="bandeira" src="https://raw.githubusercontent.com/arthus05/Capacitacao-CEOS-1-CSS/master/exercise/exercise10/uruguai-sun.png" alt="sol da bandeira do uruguai">
+            <section id="linha1"></section>
+            <section id="linha2"></section>
+            <section id="linha3"></section>
+            <section id="linha4"></section>
+            <section id="linha5"></section>
+            <section id="linha6"></section>
+            <section id="linha7"></section>
+            <section id="linha8"></section>
+            <section id="linha9"></section>
+        </section>
+    </body>
+</html>
+```
+```css
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 1022.7px;
+    width: 1363.6px;
+}
+
+#bandeira {
+    grid-row: 1/6;
+    grid-column: 1/2;
+    margin-left: 90.9px;
+    margin-right: 90.9px;
+    background-color: white;
+}
+
+
+
+#linha1 {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    width: 681.8px;
+    height: 113.6px;
+    background-color: white;
+    
+}
+
+#linha2 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    width: 681.8px;
+    height: 113.6px;
+    background-color: blue;
+    
+}
+
+#linha3 {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    width: 681.8px;
+    height: 113.6px;
+    background-color: white;
+    
+}
+
+#linha4 {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    width: 681.8px;
+    height: 113.6px;
+    background-color: blue;
+    
+}
+
+#linha5 {
+    grid-row: 5/6;
+    grid-column: 2/4;
+    width: 681.8px;
+    height: 113.6px;
+    background-color: white;
+    
+}
+
+#linha6 {
+    grid-row: 6/7;
+    grid-column: 1/4;
+    width: 1363.6px;
+    height: 113.6px;
+    background-color: blue;
+    
+}
+
+#linha7 {
+    grid-row: 7/8;
+    grid-column: 1/4;
+    width: 1363.6px;
+    height: 113.6px;
+    background-color: white;
+    
+}
+
+#linha8 {
+    grid-row: 8/9;
+    grid-column: 1/4;
+    width: 1363.6px;
+    height: 113.6px;
+    background-color: blue;
+    
+}
+
+#linha9 {
+    grid-row: 9/10;
+    grid-column: 1/4;
+    width: 1363.6px;
+    height: 113.6px;
+    background-color: white;
+    
+}
+```
+
 
 ## Exercício 11
 
