@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: relative;
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 2px;
+}

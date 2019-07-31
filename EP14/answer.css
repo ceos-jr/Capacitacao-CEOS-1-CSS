@@ -1,0 +1,16 @@
+h2{
+    border-bottom: 1px black solid;
+}
+
+aside{
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 200px;
+}
+
+img, a{
+    margin-top: 20px;
+}

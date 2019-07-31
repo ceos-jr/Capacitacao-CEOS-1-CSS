@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    height: 108px;
+    width: 304px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around; 
+    background: rgb(150, 217, 238);
+}
+
+nav ul li{
+    font-size: 15pt;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+}
+
+@media (max-width: 1024px){
+    ul{display: none}
+}

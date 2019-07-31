@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav{
+    position: relative; 
+    align-items: flex-start;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 2px;
+}
