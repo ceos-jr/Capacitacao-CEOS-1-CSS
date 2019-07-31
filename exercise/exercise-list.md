@@ -743,7 +743,7 @@ footer {
     background-image: linear-gradient(#009bc3, white)
 }
 
-.flex-item {
+.flex-item-header {
     margin-right: 10px;
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
