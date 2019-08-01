@@ -38,37 +38,37 @@ Segue uma lista de exercício com os conteúdos ensinado no módulo CSS. Siga o 
 </html>
 ```
 
-1. `<meta charset="utf-8" />` é ____________ de `<head></head>`.
-2. `<li>Configuração</li>` é ____________ de `<nav></nav>`.
-3. `<li>Perfil</li>` é ____________ de `<li>Configuração</li>`.
-4. `<li>Perfil</li>` é subsequente de ____________.
-5. `<main></main>` é filho de ____________.
-6. `<footer></footer>` é irmão de ____________.
-7. `<h1>Meu produto</h1>` é precedente de ____________.
-8. `<p>Algum texto sobre o meu produto</p>` é ____________ de `<html></html>`..
-9. `<ul></ul>` é ____________ de `<li></li>`.
-10. `<head></head>` é ____________ de `<body></body>`.
+1. `<meta charset="utf-8" />` é Filho de `<head></head>`.
+2. `<li>Configuração</li>` é descendente de `<nav></nav>`.
+3. `<li>Perfil</li>` é Irmão de `<li>Configuração</li>`.
+4. `<li>Perfil</li>` é subsequente de <li>Início</li>.
+5. `<main></main>` é filho de <body></body>.
+6. `<footer></footer>` é irmão de <header></header>.
+7. `<h1>Meu produto</h1>` é precedente de <p>Algum texto sobre o meu produto</p>.
+8. `<p>Algum texto sobre o meu produto</p>` é Descendente de `<html></html>`..
+9. `<ul></ul>` é Pai de `<li></li>`.
+10. `<head></head>` é irmão de `<body></body>`.
 
 ## Exercício 2
 
 Para os seletores abaixo, diga qual o tipo dele.
 
-1. `body { ... }`.
-2. `li:hover { ... }`.
-3. `p::before { ... }`.
-4. `body ul li { ... }`.
-5. `.section-item { ... }`.
-6. `section[class^="section-item"] { ... }`.
+1. `body { ... }`. Selotor de tipo
+2. `li:hover { ... }`. Seletor de pseudoclasse
+3. `p::before { ... }`. Seletor de pseudoelemento
+4. `body ul li { ... }`. Seletor de especificidade/descendente
+5. `.section-item { ... }`. Seletor de Classe
+6. `section[class^="section-item"] { ... }`. Seletor de atributo 
 
 ## Exercício 3
 
 Dado os seletores abaixo, forme o número de especificidade.
 
-1. `body ul li { ... }`.
-2. `.section-item > p`.
-3. `head + body { ... }`.
-4. `#section-father ul li::before { ... }`.
-5. `section ul li:hover { ... }`.
+1. `body ul li { ... }`. a=0; b=0; c=0; d=3; abcd=0003
+2. `.section-item > p`. a=0; b=0; c=1; d=1; abcd=0011
+3. `head + body { ... }`. a=0; b=0; c=0; d=2; abcd=0002
+4. `#section-father ul li::before { ... }`.a=0; b=1; c=0; d=2; abcd=0102
+5. `section ul li:hover { ... }`. a=0; b=0; c=1; d=2; abcd=0012
 
 ## Exercício 4
 
@@ -89,23 +89,23 @@ Dado o html abaixo, analise os itens com css e diga qual regra se aplica não le
 
 1. 
 ```css
-	#navbar ul { ... }
-	nav ul { ... }
-	header nav ul { ... }
+	#navbar ul { ... } . especificidade -  0101 - essa regra se aplica
+	nav ul { ... } . especificidade - 0004
+	header nav ul { ... } especificidade - 0003
 ```
 
 2.
 ```css
-	nav ul li { ... }
-	header nav ul li { ... }
-	.navbar-item { ... }
+	nav ul li { ... } especificidade - 0003
+	header nav ul li { ... } especificidade - 0004
+	.navbar-item { ... } especificidade - 0010 - essa regra se aplica
 ```
 
 3.
 ```css
-	nav ul .navbar-item { ... }
-	.navbar-item { ... }
-	nav[id="navbar"] ul li { ... }
+	nav ul .navbar-item { ... } especificidade - 0012
+	.navbar-item { ... } especificidade - 0010
+	nav[id="navbar"] ul li { ... } especificidade - 0012 - esta regra se aplica
 ```
 
 ## Exercício 5
