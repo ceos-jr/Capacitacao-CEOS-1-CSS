@@ -1,0 +1,44 @@
+body, #bandeira, #sol, #linhas_0, #linhas_1, #linhas_2, .wht, .blu {
+	margin: 0 0;
+	padding: 0 0;
+}
+#linhas_acima, #linhas_abaixo {
+	display: flex;
+	flex-direction: column;
+}
+#bandeira {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	grid-gap: 0 0;
+}
+img {
+	position: relative;
+	margin: auto;
+	padding: 5vh;
+	height: 80%;
+	width: 80%;
+}
+#sol {
+	grid-column: 1 / 2;
+	grid-row: 1 / 6;
+	max-height: 62.5vh;
+}
+#linhas_acima {
+	grid-column: 2 / 4;
+	grid-row: 1 / 6;
+	max-height: 62.5vh;
+}
+#linhas_abaixo {
+	grid-column: 1 / 4;
+	grid-row: 6 / 9;
+	max-height: 37.5vh;
+}
+.wht {
+	background-color: white;
+	height: 12.5vh;
+}
+.blu {
+	background-color: rgb(0, 56, 168);
+	height: 12.5vh;
+}

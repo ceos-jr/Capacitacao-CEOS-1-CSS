@@ -1,0 +1,21 @@
+.content {
+	display: flex;
+}
+button {
+	border-radius: 50%;
+	float: right;
+	margin-right: 18px;
+	margin-bottom: 22px;
+}
+section > img {
+	margin: 15% 15% 0% 15%;
+	height: 40%;
+	width: 50%;
+}
+button > img {
+	max-height: 30px;
+	max-width: 30px;
+}
+footer {
+	margin: 20px 0 0 5px;
+}

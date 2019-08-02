@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#main {
+	display: flex;
+	background-color: lightblue;
+	height: 60vh;
+	width: 60vw;
+}
+#main > img {
+	position: relative;
+	max-height: 50vh;
+	max-width: 20vw;
+	height: auto;
+	width: auto;
+	margin: 5vh 5vw;
+}
+#descricao {
+	margin: 5vmin;
+	padding: 10vmin;
+	font-size: 2.5vmin;
+}
+@media screen and (max-width: 1024px) {
+	#main {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 160vh;
+	}
+}

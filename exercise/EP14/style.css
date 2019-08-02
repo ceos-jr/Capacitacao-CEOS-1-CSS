@@ -1,0 +1,27 @@
+body, aside {
+	margin: 0;
+	padding: 0;
+}
+aside {
+	background-color: lightblue;
+	max-height: 60vh;
+	max-width: 40vw;
+	float: right;
+	border-left: 1px solid black;
+}
+h1 {
+	margin: 5vmin;
+	font-size: 3vmin;
+}
+.social {
+	margin: 8vmin;
+	font-size: 2.5vmin;
+}
+#facebook{
+	background-color: darkblue;
+	color: white;
+}
+#twitter{
+	background-color: lightblue;
+	color: darkblue;
+}

@@ -1,0 +1,194 @@
+body {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+	overflow: hidden;
+}
+
+header {
+	grid-row: 1 / 2;
+	grid-column: 1 / 6;
+	display: flex;
+	flex-direction: row;
+	background-color: inherit;
+	border-bottom: 1px solid black;
+}
+#barrinhas {
+	display: none;
+}
+#logo {
+	max-height: 15vh;
+	max-width: 15vh;
+	height: auto;
+	width: auto;
+	margin: 2.5vh 3vw;
+}
+button {
+	border: none;
+	background-color: transparent;
+	color: darkblue;
+	width: 20vw;
+	height: 10vh;
+	margin: 5vh 3vw;
+	font-size: 1.8vmax;
+}
+button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	cursor: pointer;
+}
+
+#main {
+	grid-row: 2 / 5;
+	grid-column: 1 / 4;
+	display: flex;
+	background-color: inherit;
+}
+#main > img {
+	position: relative;
+	max-height: 50vh;
+	max-width: 20vw;
+	height: auto;
+	width: auto;
+	margin: 5vh 5vw;
+}
+#descricao {
+	margin: 5vmin;
+	padding: 10vmin;
+	font-size: 2.5vmin;
+}
+
+aside {
+	grid-row: 2 / 5;
+	grid-column: 4 / 6;
+	background-color: inherit;
+	border-left: 1px solid black;
+}
+h1 {
+	margin: 5vmin;
+	font-size: 3vmin;
+}
+.social {
+	margin: 8vmin;
+	font-size: 2.5vmin;
+}
+#facebook{
+	background-color: darkblue;
+	color: white;
+}
+#twitter{
+	background-color: lightblue;
+	color: darkblue;
+}
+
+footer {
+	grid-row: 5 / 6;
+	grid-column: 1 / 6;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: inherit;
+	border-top: 1px solid black;
+}
+#ceos, #ufc {
+	height: 15vh;
+	width: 15vw;
+	margin: 2.5vh 8vw;
+}
+#ende {
+	height: 10vh;
+	width: 10vw;
+	margin: 2.5vh 8vw;
+	font-size: 2vmin;
+}
+#ende > p {
+	margin: 1vh 0;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	#logo, header > button {
+		display: none;
+	}
+	#barrinhas {
+		display: inline-block;
+		position: relative;
+		width: 10vmax;
+		height: 15vh;
+		margin: 2.5vh 0 0 2vw;
+		padding: 0;
+	}
+	#barrinhas:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+	}
+	#barrinhas > p {
+		background-color: rgba(0, 0, 0, 0.4);
+		border-radius: 50px;
+		width: 10vmax;
+		height: 3.5vh;
+		margin: 1vh 0;
+	}
+	#main {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 80vh;
+	}
+	#main > img {
+		max-height: 30vh;
+		max-width: 60vw;
+		height: auto;
+		width: auto;
+		margin: 10vh 20vw 0 20vw;
+	}
+	#descricao {
+		margin: 1vh 20vw;
+	}
+	aside {
+		display: none;
+	}
+	#ufc {
+		display: none;
+	}
+	#ceos, #ende {
+		width: 25vw;
+		font-size: 1.9vmax;
+	}
+	#ende {
+		margin-top: 5vh;
+	}
+}
+@media screen and (max-width: 400px) {
+	#descricao {
+		font-size: 2.5vmax;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 55vh;
+	}
+	#ufc {
+		display: inline-block;
+		position: relative;
+	}
+	#ceos, #ufc {
+		width: 30vw;
+		height: 15vh;
+		margin: 1vh 35vw;
+	}
+	#ende {
+		align-items: center;
+		width: 50vw;
+		height: 10vh;
+		margin: 2vh 25vw;
+		font-size: 2.5vmax;
+	}
+}

@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	height: 20vh;
+	border-bottom: 1px solid black;
+}
+#barrinhas {
+	display: none;
+}
+#logo {
+	max-height: 15vh;
+	max-width: 15vh;
+	height: auto;
+	width: auto;
+	margin: 2.5vh 3vw;
+}
+button {
+	border: none;
+	background-color: inherit;
+	color: darkblue;
+	width: 20vw;
+	height: 10vh;
+	margin: 5vh 3vw;
+	font-size: 1.8vmax;
+}
+button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+	#logo, button {
+		display: none;
+	}
+	#barrinhas {
+		display: inline-block;
+		position: relative;
+		width: 10vmax;
+		height: 15vh;
+		margin: 2.5vh 0 0 2vw;
+		padding: 0;
+	}
+	#barrinhas:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+	}
+	p {
+		background-color: rgba(0, 0, 0, 0.4);
+		border-radius: 50px;
+		width: 10vmax;
+		height: 3.5vh;
+		margin: 1vh 0;
+	}
+}

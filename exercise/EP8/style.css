@@ -1,0 +1,32 @@
+nav {
+	border-width: 1px;
+	border-color: lightblue;
+	background-color: lightblue;
+	height: 10vh;
+}
+button {
+	border: none;
+	background-color: inherit;
+	color: darkblue;
+	width: 15vw;
+}
+button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	color: darkblue;
+}
+#icn, #sbr, #srv, #cnt {
+	float: left;
+	height: 6vh;
+	padding: 10px;
+}
+#sbr, #srv, #cnt {
+	position: relative;
+	margin: 2vh 5vh;
+	font-size: 24px;
+}
+img {
+	height: 6vh;
+	width: 6vh;
+	margin: 1vh 1vh;
+}
