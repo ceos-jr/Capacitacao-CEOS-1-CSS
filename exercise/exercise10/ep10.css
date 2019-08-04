@@ -1,0 +1,45 @@
+body{margin: 0; display: flex; align-items: baseline; justify-content: baseline;}
+
+#grid-container {
+    display: grid;
+    grid-gap: 3.5rem ;
+    grid-template-areas: 
+        "header"
+        "main "
+        "aside"
+        "footer";
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 200% 100% 200% ; 
+
+
+}
+
+.linha1{background:  rgb(4, 21, 175);
+        grid-area: header;
+        grid-column: 2 / 4;
+}
+.linha2{background: rgb(4, 21, 175);
+        grid-area: main;
+
+        grid-column: 2 / 4;
+}
+.linha3{background:  rgb(4, 21, 175);
+        grid-area: aside;
+        grid-column: 1 / 4;
+
+
+}
+.linha4{background:  rgb(4, 21, 175);
+        grid-area: footer;
+        grid-column: 1 / 4;
+
+}
+
+.uruguai{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    left: 250px;
+    top: 150px;
+
+}
