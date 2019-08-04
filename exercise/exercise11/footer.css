@@ -1,0 +1,37 @@
+body{margin: 0;}
+/*FOOTER*/
+header { background-color: rgb(255, 255, 255);    height: 250px;}
+main { background-color: rgb(255, 255, 255);    height: 345px;}
+
+#container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: baseline;
+    background-color: rgb(255, 53, 255); 
+    margin: 
+}
+
+.item1  {
+    height: auto;
+    width: 60px; margin: 10px;
+}
+.item2{margin: 10px; bottom: 10px; margin: 10px;}
+.item3  {
+    height: auto;margin: 10px;
+    width: 90px;
+}
+@media (max-width: 1024px) {
+    .item3 {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; justify-content: center; align-items: center;
+    }
+    .item3 {
+        display: initial;
+    }
+}
